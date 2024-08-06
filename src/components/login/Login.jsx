@@ -25,7 +25,7 @@ const Login = () => {
         url: URL.createObjectURL(e.target.files[0]),
       });
     }
-  };
+  }; 
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -84,7 +84,7 @@ const Login = () => {
         <h2>Welcome back,</h2>
         <form onSubmit={handleLogin}>
           <input type="email" placeholder="Email" name="email" />
-          <input type="password" placeholder="Password" name="password" id="" />
+          <input type="password" placeholder="Password" name="password" id="login-password" />
           <button disabled={loading}>
             {loading ? "Loading..." : "Sign In"}
           </button>
@@ -107,7 +107,7 @@ const Login = () => {
           />
           <input type="text" placeholder="Username" name="username" />
           <input type="email" placeholder="Email" name="email" />
-          <input type="password" placeholder="Password" name="password" id="" />
+          <input type="password" placeholder="Password" name="password" id="create-password" />
           <button disabled={loading}>
             {loading ? "Loading..." : "Sign Up"}
           </button>
